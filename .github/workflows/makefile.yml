@@ -19,6 +19,9 @@ jobs:
       
     - name: update
       run: git submodule update --init
-    
+      
+    - name: Build Linux
+      run: make apps-linux32
+      
     - name: Build Win
       run: make apps-win
